@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "tienda"
+  "defaultProject": "tienda",
+  "cli": {
+    "analytics": false
+  }
 }
