@@ -1,0 +1,17 @@
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+
+.small {
+    display: none;
+}
+
+@media(min-width: 280px) and (max-width: 600px) {
+    .swiper-container {
+        display: none;
+    }
+    .small {
+        display: block;
+    }
+}

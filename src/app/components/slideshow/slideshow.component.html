@@ -1,0 +1,58 @@
+<!-- <swiper [slidesPerView]="3" [spaceBetween]="50" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()" [navigation]="true" [pagination]="{ clickable: true }" [scrollbar]="{ draggable: true }">
+    <ng-template *ngFor="let prom of proms" swiperSlide>
+        <div class="card h-100" style="width: 20rem;">
+            <img [src]="prom.imagen" class="card-img-top" [alt]="prom.imagen">
+            <div class="card-body">
+                <h5 class="card-title">{{prom.nombre}}</h5>
+                <p class="card-text">{{prom.descp}}</p>
+                <p style="color: rgb(177, 0, 0);">{{prom.precio}}</p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+                </div>
+
+            </div>
+        </div>
+    </ng-template>
+</swiper> -->
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div *ngFor="let prom of proms" class="swiper-slide">
+            <div class="row row-cols-1 row-cols-md-3 ">
+                <div class="card h-100" style="width: 20rem;">
+                    <img [src]="prom.imagen" class="card-img-top" [alt]="prom.imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">{{prom.nombre}}</h5>
+                        <p class="card-text">{{prom.descp}}</p>
+                        <p style="color: rgb(177, 0, 0);">{{prom.precio}}</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-dark">Agregar al carrito</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="swiper-scrollbar"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-3 small">
+    <div *ngFor="let prom of proms" class="col">
+        <div class="card">
+            <img [src]="prom.imagen" class="card-img-top" [alt]="prom.imagen">
+            <div class="card-body">
+                <h5 class="card-title">{{prom.nombre}}</h5>
+                <p class="card-text">{{prom.descp}}</p>
+                <p style="color: rgb(177, 0, 0);">{{prom.precio}}</p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

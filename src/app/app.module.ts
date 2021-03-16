@@ -11,6 +11,11 @@ import { MujeresComponent } from './components/mujeres/mujeres.component';
 import { PagosComponent } from './components/pagos/pagos.component';
 import { Page404Component } from './components/page404/page404.component';
 
+//swiper
+
+import { SwiperModule } from 'swiper/angular';
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +25,13 @@ import { Page404Component } from './components/page404/page404.component';
     HombresComponent,
     MujeresComponent,
     PagosComponent,
-    Page404Component
+    Page404Component,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
