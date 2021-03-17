@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
-import { HombresComponent } from './components/hombres/hombres.component';
-import { MujeresComponent } from './components/mujeres/mujeres.component';
 import { PagosComponent } from './components/pagos/pagos.component';
 import { Page404Component } from './components/page404/page404.component';
 
@@ -15,6 +13,9 @@ import { Page404Component } from './components/page404/page404.component';
 
 import { SwiperModule } from 'swiper/angular';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { TendenciasComponent } from './components/tendencias/tendencias.component';
+import { NuevosComponent } from './components/nuevos/nuevos.component';
+import { NoticiasComponent } from './components/noticias/noticias.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    HombresComponent,
-    MujeresComponent,
     PagosComponent,
     Page404Component,
-    SlideshowComponent
+    SlideshowComponent,
+    TendenciasComponent,
+    NuevosComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

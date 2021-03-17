@@ -1,3 +1,52 @@
+.inicio {
+    margin: 0 10%;
+}
+
+.img-banner {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
 .filtro {
     margin: 0 50px;
+}
+
+.listaAcordeon {
+    display: none;
+}
+
+.listaGrande {
+    display: block;
+    border: 1px solid grey;
+    border-style: none solid none none;
+}
+
+hr.style18 {
+    height: 30px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr.style18:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+@media(min-width: 280px) and (max-width: 600px) {
+    .listaAcordeon {
+        display: block;
+        border: 1px solid grey;
+        border-style: none none solid none;
+        margin-bottom: 10px;
+    }
+    .listaGrande {
+        display: none;
+    }
 }

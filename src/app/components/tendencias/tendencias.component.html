@@ -1,0 +1,33 @@
+<div class="principal">
+    <br>
+    <h1 class="text-center">SunGlasses Trend</h1>
+    <br>
+    <div class="textop">
+        <p class="text-center lead">Preparate para descubir las tendencias mundiales de lentes de sol, aquí encontrarás las mejores marcas y lo que más está pegando en el mercado actualmente. Echa un vistazo y nos cuentas!</p>
+        <p class="text-center text-muted lead">Promociones y descuentos no aplican para esta sección</p>
+    </div>
+
+    <div class="banner">
+        <img src="https://www.travelclub.cl/upload/categoria/banner_Cat394f2016114164247.jpg" alt="Banner tendencias" class="img-fluid rounded img-banner" width="100%">
+    </div>
+
+
+    <br>
+    <div class="seccion">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div *ngFor="let tendencia of tendencias" class="col">
+                <div class="card h-100">
+                    <img [src]="tendencia.imagen" class="card-img-top" [alt]="tendencia.nombre">
+                    <div class="card-body">
+                        <!-- <h5><span class="badge bg-dark">New</span></h5> -->
+                        <p class="card-text text-muted lead">{{tendencia.nombre}}</p>
+                        <p class="fw-bold">{{tendencia.precio}}</p>
+                        <a href=""><i class="fas fa-shopping-bag fa-2x" ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>

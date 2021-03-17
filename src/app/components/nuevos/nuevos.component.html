@@ -1,0 +1,35 @@
+<div class="principal">
+    <br>
+    <h1 class="text-center">New Collection</h1>
+    <br>
+    <div class="textop">
+        <p class="text-center lead">En este verano, y en tu vida diaria, luce este nuevo catalogo hecho para tí. Aprovecha que llegan en el momento preciso, al precio más económico que encontrarás! Recuerda que en esta sección tendrás beneficios exclusivos</p>
+        <p class="text-center text-muted lead">Promociones aplican para esta sección bajo unos términos y condiciones.</p>
+    </div>
+
+    <div class="banner">
+        <img src="https://www.optimoda.es/wp-content/uploads/2018/11/banner-eyeglasses.jpg" alt="Banner tendencias" class="img-fluid rounded img-banner" width="100%">
+    </div>
+
+
+    <br><br>
+    <div class="seccion">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div *ngFor="let nuevo of nuevos" class="col">
+                <div class="card h-100">
+                    <img [src]="nuevo.imagen" class="card-img-top" [alt]="nuevo.nombre">
+                    <div class="card-body">
+                        <h5><span class="badge bg-dark">New</span></h5>
+                        <p class="card-text text-muted lead">{{nuevo.nombre}}</p>
+                        <p class="fw-bold">{{nuevo.precio}}</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success">Agregar a la bolsa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
