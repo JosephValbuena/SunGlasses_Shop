@@ -1,1 +1,51 @@
-<p>noticias works!</p>
+<div class="noticias mt-3">
+    <h1 class="text-center">Noticias Sobre Lentes y moda</h1>
+
+    <hr>
+
+    <p class="text-center inicioP">En esta sección encontrarás noticias y notas actulizadas de las tendencias y nuevas marcas acerca de los lentes de sol, aquí estarás actulizado de todo lo que compete a este accesorio tan reconocido en el mundo!</p>
+
+    <p class="text-center text-muted">
+        Puede encontrar cupones en la sección de noticias.
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <img src="https://cdn.shopify.com/s/files/1/1600/4499/files/1170x380_BANNER_NEW-IN_POLARIZADAS_D_V1_2591d8b5-91f6-4e34-a300-768d9d5c7356.jpg" class="card-img noticiasImg" height="255px" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title">Innova View</h3>
+                    <p class="card-text">La empresa Hawkers ha lanzado su nueva colección de lentes, sus nuevos diseños están arrasando con las críticas. Mira los porcentajes!</p>
+                    <button class="btn btn-outline-light">Leer noticia completa</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <img src="https://www.co-serrano.com/wp-content/uploads/2018/12/BANNER-GAFAS-DE-MODA-1.jpg" class="card-img noticiasImg" height="255px" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title">Mood: Aprender</h3>
+                    <p class="card-text">Aprende cómo identificar unos lentes de gran valor comparados con copias, sabemos que te ayudará en tus futuras compras!</p>
+                    <button class="btn btn-outline-light">Leer noticia completa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div *ngFor="let noticia of noticias" class="col">
+            <div class="card">
+                <img [src]="noticia.imagen" class="card-img-top" height="250px" width="auto" alt="...">
+                <div class="card-body">
+                    <p class="card-text">{{noticia.preview}}</p>
+                    <button class="btn btn-dark">Leer noticia completa</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
